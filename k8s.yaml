@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: sample-fn
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: dev.local/tessellator/sample-fn:0.1.0
